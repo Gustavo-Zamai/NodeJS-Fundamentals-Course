@@ -1,18 +1,81 @@
-const playerOne = {
-  NAME: "playerOne",
-  SPEED: 4,
-  HANDLING: 3,
-  POWER: 3,
-  SCORE: 0,
-};
+const characters = [
+  {
+    NAME: "Mario",
+    SPEED: 4,
+    HANDLING: 3,
+    POWER: 3,
+    SCORE: 0,
+  },
+  {
+    NAME: "Luigi",
+    SPEED: 3,
+    HANDLING: 4,
+    POWER: 4,
+    SCORE: 0,
+  },
+  {
+    NAME: "Peach",
+    SPEED: 2,
+    HANDLING: 5,
+    POWER: 2,
+    SCORE: 0,
+  },
+  {
+    NAME: "Toad",
+    SPEED: 2,
+    HANDLING: 4,
+    POWER: 5,
+    SCORE: 0,
+  },
+  {
+    NAME: "Yoshi",
+    SPEED: 1,
+    HANDLING: 2,
+    POWER: 3,
+    SCORE: 0,
+  },
+  {
+    NAME: "Bowser",
+    SPEED: 3,
+    HANDLING: 2,
+    POWER: 5,
+    SCORE: 0,
+  },
+  {
+    NAME: "Donkey Kong",
+    SPEED: 1,
+    HANDLING: 3,
+    POWER: 5,
+    SCORE: 0,
+  },
+  {
+    NAME: "Wario",
+    SPEED: 2,
+    HANDLING: 3,
+    POWER: 5,
+    SCORE: 0,
+  },
+  {
+    NAME: "Daisy",
+    SPEED: 3,
+    HANDLING: 2,
+    POWER: 2,
+    SCORE: 0,
+  },
+  {
+    NAME: "Koopa Troopa",
+    SPEED: 3,
+    HANDLING: 4,
+    POWER: 3,
+    SCORE: 0,
+  },
+];
 
-const playerTwo = {
-  NAME: "playerTwo",
-  SPEED: 3,
-  HANDLING: 4,
-  POWER: 4,
-  SCORE: 0,
-};
+// Function to get two distinct random players
+async function getRandomPlayers(characters) {
+  const shuffled = [...characters].sort(() => 0.5 - Math.random());
+  return [shuffled[0], shuffled[1]];
+}
 
 async function rollDice() {
   return Math.floor(Math.random() * 6) + 1;
@@ -166,8 +229,9 @@ async function pickAWinner(characterOne, characterTwo) {
 }
 
 (async function main() {
+  const [playerOne, playerTwo] = await getRandomPlayers(characters);
   console.log(
-    `🚨 🏁 Corrida entre ${playerOne.NAME} e ${playerTwo.NAME} comecando... \n`
+    `🚨 🏁 Race between ${playerOne.NAME} and ${playerTwo.NAME} is about to begin... \n`
   );
 
   await startRaceEngine(playerOne, playerTwo);
