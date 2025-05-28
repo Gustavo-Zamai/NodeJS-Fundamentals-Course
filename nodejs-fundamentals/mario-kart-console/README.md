@@ -49,13 +49,12 @@ Each character includes:
 3. In the terminal, run:
 
 ```bash
-node race.js
-Replace race.js with your actual filename if different.
+node index.js
+```
+Replace index.js with your actual filename if different.
 
-🧪 Sample Output
-text
-Copiar
-Editar
+## 🧪 Sample Output
+```text
 🚨 🏁 Race between Luigi and Toad is about to begin...
 
 Luigi received power-up: TURBO
