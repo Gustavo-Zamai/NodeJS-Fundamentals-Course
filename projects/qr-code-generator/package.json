@@ -1,0 +1,19 @@
+{
+  "name": "qr-code-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "node --env-file=.env --watch src/index.js",
+    "start:dev:basic": "node --env-file=.env src/index.js"
+  },
+  "keywords": [],
+  "author": "Gustavo-Zamai",
+  "license": "ISC",
+  "description": "ecommerce utility kit and features",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "prompt": "^1.3.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
