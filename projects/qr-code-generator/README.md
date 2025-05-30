@@ -110,3 +110,6 @@ npm run start:dev:basic
 
 ## 📜 License
 This project is licensed under the ISC License.
+
+## 👨‍💻 Author
+`Gustavo Zamai`
