@@ -62,4 +62,5 @@ npm run start
 ### 📌 Notes
 - This repository has 3 separate projects, which are listed below:
     - [podcast-manager-api-node-http-ts](https://github.com/Gustavo-Zamai/podcast-manager-api-node-http-ts)
+    - [f1-minimal-api-node-ts-fastify](https://github.com/Gustavo-Zamai/f1-minimal-api-node-ts-fastify)
     
