@@ -13,15 +13,11 @@ Topics covered so far:
 - ✅ Introduction to Node.js
 - ✅ Using npm and package.json
 - ✅ Working with TypeScript in Node.js
-- 🔄 Debugging TypeScript Projects
-- 🔜 Connecting to databases
-- 🔜 Building complete APIs
+- ✅ Debugging TypeScript Projects
+- ✅ Connecting to databases
+- ✅ Building complete APIs
 
 ---
-
-## 🗂️ Current Project: Debugging TypeScript Project
-
-**Path:** `typescript-for-node-devs/debug-typescript-project`
 
 ### 📦 Features:
 
@@ -39,27 +35,31 @@ npm install
 npm run start
 ```
 ### 🧠 Key Learnings So Far
-How to set up and initialize a Node.js project
+- How to set up and initialize a Node.js project
+- The role of package.json and npm in project management
+- Configuring and compiling TypeScript for backend development
+- Debugging TypeScript using tsx and related tools
+- Learn about HTTP Protocol and API in theory
+- Build API without frameworks, using TypeScript
+- Build API with ExpressJS and TypeScript
+- Build minimal API with Fastify and TypeScript
 
-The role of package.json and npm in project management
-
-Configuring and compiling TypeScript for backend development
-
-Debugging TypeScript using tsx and related tools
-
-### 🔧 Tech Stack
-Node.js
-
-TypeScript
-
-npm
-
-tsx
-
-Visual Studio Code
+### 🔧 Tech Used
+- Node.js
+- TypeScript
+- npm
+- npm scripts
+- tsx
+- tsup
+- Visual Studio Code
+- HTTP Server
+- ExpressJS
+- Fastify
+- API
+- JSON
+- Databases
 
 ### 📌 Notes
-This README.md is a work-in-progress, just like the bootcamp itself.
-I’ll continue to update this as I complete more modules and build more projects!
-
-Feel free to explore the folder structure for project-specific README files and code.
+- This repository has 3 separate projects, which are listed below:
+    - [podcast-manager-api-node-http-ts](https://github.com/Gustavo-Zamai/podcast-manager-api-node-http-ts)
+    
