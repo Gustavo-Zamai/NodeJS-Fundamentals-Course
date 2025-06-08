@@ -52,7 +52,7 @@ npm run start
 - tsx
 - tsup
 - Visual Studio Code
-- HTTP Server
+- HTTP Module
 - ExpressJS
 - Fastify
 - API
